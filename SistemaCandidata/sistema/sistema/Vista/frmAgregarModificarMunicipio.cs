@@ -7,7 +7,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
 using sistema.Modelo;
 using sistema.Controlador;
 using System.IO;
@@ -16,15 +15,12 @@ namespace sistema.Vista
 {
     public partial class frmAgregarModificarMunicipio : Form
     {
-
         frmMunicipio MUNI;
         Municipio ZMUNI;
-
-        
-
         public frmAgregarModificarMunicipio(frmMunicipio muni)
         {
             InitializeComponent();
+            btnAceptar.Text = "Agregar";
             MUNI = muni;
         }
 
@@ -32,15 +28,13 @@ namespace sistema.Vista
         {
             InitializeComponent();
             this.Text = "Editar municipio";
+            btnAceptar.Text = "Actualizar";
             ZMUNI = zmuni;
             txtNombreCompleto.Text = zmuni.sNombreMunicipio;
             txtDescripcion.Text = zmuni.sDescripcion;
             chkEstado.Checked = zmuni.bStatus;
             txtRuta.Text = zmuni.sLogotipo;
             txtRuta.Enabled = false;
-
-
-
 
             MUNI = muni;
         }
@@ -55,7 +49,7 @@ namespace sistema.Vista
             else
             {
                 Nmuni = ZMUNI;
-            }                    
+            }
 
             Nmuni.sNombreMunicipio = txtNombreCompleto.Text;
             Nmuni.sDescripcion = txtDescripcion.Text;
@@ -66,13 +60,11 @@ namespace sistema.Vista
                 Nmuni.bStatus = true;
             }
 
-
             MunicipioManager MunicipioM = new MunicipioManager();
             MunicipioM.GuardarModificar(Nmuni);
 
             MUNI.cargar();
             this.Close();
-            
         }
 
         private void btnCancelar_Click(object sender, EventArgs e)

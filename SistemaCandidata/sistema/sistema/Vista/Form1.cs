@@ -68,5 +68,10 @@ namespace sistema
             frmAgregarModificarMunicipio editar = new frmAgregarModificarMunicipio(this,Municipio);
             editar.Show();
         }
+
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
