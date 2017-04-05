@@ -61,3 +61,5 @@ C:\Users\NUNEZ\Source\Repos\Candidatas\SistemaCandidata\sistema\sistema\obj\Debu
 C:\Users\NUNEZ\Source\Repos\Candidatas\SistemaCandidata\sistema\sistema\obj\Debug\sistema.Properties.Resources.resources
 C:\Users\NUNEZ\Source\Repos\Candidatas\SistemaCandidata\sistema\sistema\obj\Debug\sistema.Vista.frmAgregarModificarMunicipio.resources
 C:\Users\NUNEZ\Source\Repos\Candidatas\SistemaCandidata\sistema\sistema\obj\Debug\sistema.csproj.GenerateResource.Cache
+C:\Users\NUNEZ\Source\Repos\Candidatas\SistemaCandidata\sistema\sistema\obj\Debug\sistema.Vista.frmAgregarModificarUsuario.resources
+C:\Users\NUNEZ\Source\Repos\Candidatas\SistemaCandidata\sistema\sistema\obj\Debug\sistema.Vista.frmUsuarios.resources

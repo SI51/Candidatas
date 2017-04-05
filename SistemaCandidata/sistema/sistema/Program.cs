@@ -16,7 +16,7 @@ namespace sistema
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmMunicipio());
+            Application.Run(new Vista.frmUsuarios());
         }
     }
 }

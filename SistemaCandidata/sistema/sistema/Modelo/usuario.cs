@@ -34,5 +34,6 @@ namespace sistema.Modelo
 
         public ICollection<Candidata> Candidatas { get; set; }
 
+
     }
 }

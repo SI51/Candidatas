@@ -16,7 +16,6 @@ namespace sistema
 {
     public partial class frmMunicipio : Form
     {
-
         public void cargar()
         {
             this.dgvDatos.DataSource = MunicipioManager.Listar();
