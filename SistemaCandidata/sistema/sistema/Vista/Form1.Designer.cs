@@ -39,6 +39,7 @@
             this.sNombreMunicipio = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.sDescripcion = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.bStatus = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.sLogotipo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDatos)).BeginInit();
             this.SuspendLayout();
             // 
@@ -60,11 +61,12 @@
             this.pkMunicipio,
             this.sNombreMunicipio,
             this.sDescripcion,
-            this.bStatus});
+            this.bStatus,
+            this.sLogotipo});
             this.dgvDatos.Location = new System.Drawing.Point(12, 56);
             this.dgvDatos.Name = "dgvDatos";
             this.dgvDatos.ReadOnly = true;
-            this.dgvDatos.Size = new System.Drawing.Size(449, 227);
+            this.dgvDatos.Size = new System.Drawing.Size(534, 227);
             this.dgvDatos.TabIndex = 2;
             this.dgvDatos.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.dgvDatos_MouseDoubleClick);
             // 
@@ -90,7 +92,7 @@
             // 
             // btnSalir
             // 
-            this.btnSalir.Location = new System.Drawing.Point(386, 302);
+            this.btnSalir.Location = new System.Drawing.Point(471, 302);
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(75, 23);
             this.btnSalir.TabIndex = 5;
@@ -110,7 +112,7 @@
             // 
             this.txtBuscar.Location = new System.Drawing.Point(16, 30);
             this.txtBuscar.Name = "txtBuscar";
-            this.txtBuscar.Size = new System.Drawing.Size(445, 20);
+            this.txtBuscar.Size = new System.Drawing.Size(530, 20);
             this.txtBuscar.TabIndex = 7;
             this.txtBuscar.TextChanged += new System.EventHandler(this.txtBuscar_TextChanged);
             // 
@@ -144,11 +146,18 @@
             this.bStatus.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             this.bStatus.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
             // 
+            // sLogotipo
+            // 
+            this.sLogotipo.DataPropertyName = "sLogotipo";
+            this.sLogotipo.HeaderText = "Logotipo";
+            this.sLogotipo.Name = "sLogotipo";
+            this.sLogotipo.ReadOnly = true;
+            // 
             // frmMunicipio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(473, 337);
+            this.ClientSize = new System.Drawing.Size(558, 337);
             this.Controls.Add(this.txtBuscar);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.btnSalir);
@@ -177,6 +186,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn sNombreMunicipio;
         private System.Windows.Forms.DataGridViewTextBoxColumn sDescripcion;
         private System.Windows.Forms.DataGridViewCheckBoxColumn bStatus;
+        private System.Windows.Forms.DataGridViewTextBoxColumn sLogotipo;
     }
 }
 

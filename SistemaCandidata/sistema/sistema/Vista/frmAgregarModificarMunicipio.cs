@@ -20,7 +20,7 @@ namespace sistema.Vista
         frmMunicipio MUNI;
         Municipio ZMUNI;
 
-        Municipio nMunicipio;
+        
 
         public frmAgregarModificarMunicipio(frmMunicipio muni)
         {
@@ -36,6 +36,8 @@ namespace sistema.Vista
             txtNombreCompleto.Text = zmuni.sNombreMunicipio;
             txtDescripcion.Text = zmuni.sDescripcion;
             chkEstado.Checked = zmuni.bStatus;
+            txtRuta.Text = zmuni.sLogotipo;
+            txtRuta.Enabled = false;
 
 
 
@@ -46,13 +48,13 @@ namespace sistema.Vista
         private void btnAceptar_Click(object sender, EventArgs e)
         {
             Municipio Nmuni;
-            if (nMunicipio==null)
+            if (ZMUNI == null)
             {
                 Nmuni = new Municipio();
             }
             else
             {
-                Nmuni = nMunicipio;
+                Nmuni = ZMUNI;
             }                    
 
             Nmuni.sNombreMunicipio = txtNombreCompleto.Text;

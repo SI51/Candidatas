@@ -63,6 +63,7 @@ namespace sistema
             Municipio.sNombreMunicipio = dgvDatos.CurrentRow.Cells[1].Value.ToString();
             Municipio.sDescripcion = dgvDatos.CurrentRow.Cells[2].Value.ToString();
             Municipio.bStatus = Convert.ToBoolean(dgvDatos.CurrentRow.Cells[3].Value.ToString());
+            Municipio.sLogotipo = dgvDatos.CurrentRow.Cells[4].Value.ToString();
 
             frmAgregarModificarMunicipio editar = new frmAgregarModificarMunicipio(this,Municipio);
             editar.Show();
